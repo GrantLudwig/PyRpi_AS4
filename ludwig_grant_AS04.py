@@ -34,9 +34,13 @@ colors = ["Red",
           "Beige"]
 
 numColors = input("How many colors do you want printed? ")
-#Sample gets non-repeating values from the list
+print()
+
 if (int(numColors) > len(colors)):
-    numColors = len(colors)
-colorsList = random.sample(colors, numColors)
+	print("There are only", len(colors), "colors to choose from. Displaying", len(colors), "colors.")
+	numColors = len(colors)
+
+#Sample gets non-repeating values from the list
+colorsList = random.sample(colors, int(numColors))
 for i in range(len(colorsList)):
     print(str(i+1) + ".", colorsList[i])
