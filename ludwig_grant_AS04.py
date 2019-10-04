@@ -36,6 +36,7 @@ colors = ["Red",
 numColors = input("How many colors do you want printed? ")
 print()
 
+#Check if numColors is Ggreater than our list
 if (int(numColors) > len(colors)):
 	print("There are only", len(colors), "colors to choose from. Displaying", len(colors), "colors.")
 	numColors = len(colors)
